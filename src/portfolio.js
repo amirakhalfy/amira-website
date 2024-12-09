@@ -1,7 +1,7 @@
 /* Change this file to get your personal Porfolio */
 
 const settings = {
-  isSplash:true, 
+  isSplash:false, 
 };
 
 const seo = {
@@ -184,21 +184,10 @@ const skills = {
             color: "#F7DF1E",
           },
         },
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
+        
         {
           skillName: "C++",
-          fontAwesomeClassname: "simple-icons:c++",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
+          imageSrc: "cpluslogo.png",
         },
         {
           skillName: "C#",
