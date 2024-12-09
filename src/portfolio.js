@@ -186,15 +186,15 @@ const skills = {
         },
         {
           skillName: "C",
-          imageSrc: "C_logo.png",
+          imageSrc: "clogo.png",
         },
         {
           skillName: "C++",
-          imageSrc: "Cplus_logo.png",
+          imageSrc: "cpluslogo.png",
         },
         {
           skillName: "C#",
-          imageSrc: "Csharp.png",
+          imageSrc: "csharp.png",
         },
         {
           skillName: "ReactJS",
