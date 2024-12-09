@@ -2,7 +2,7 @@
   "private": true,
   "name": "masterPortfolio",
   "version": "0.1.0",
-  "homepage": "https:/amirakhalfy.github.io/amira-website",
+  "homepage": "https://amirakhalfy.github.io/amira-website",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
     "predeploy": "npm run build",
