@@ -11,7 +11,7 @@ import { settings } from "../portfolio.js";
 export default class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/amira-website">
         <Switch>
           <Route
             path="/"
@@ -25,17 +25,17 @@ export default class Main extends Component {
             }
           />
           <Route
-            path="/home"
+            path="/amira-website/home"
             render={(props) => <Home {...props} theme={this.props.theme} />}
           />
           <Route
-            path="/education"
+            path="/amira-website/education"
             render={(props) => (
               <Education {...props} theme={this.props.theme} />
             )}
           />
           <Route
-            path="/experience"
+            path="/amira-website/experience"
             exact
             render={(props) => (
               <Experience {...props} theme={this.props.theme} />
@@ -43,17 +43,22 @@ export default class Main extends Component {
           />
           
           <Route
-            path="/opensource"
+            path="/amira-website/opensource"
             render={(props) => (
               <Opensource {...props} theme={this.props.theme} />
             )}
           />
           <Route
-            path="/contact"
+            path="/amira-website/contact"
             render={(props) => <Contact {...props} theme={this.props.theme} />}
           />
 
-         
+          {settings.isSplash && (
+            <Route
+              path="/amira-website/splash"
+              render={(props) => <Splash {...props} theme={this.props.theme} />}
+            />
+          )}
         </Switch>
       </BrowserRouter>
     );
