@@ -1,0 +1,150 @@
+.opensource-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust the gap between cards as needed */
+  flex-wrap: wrap;
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.card {
+  background-color: #800020; /* Burgundy background color */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white; /* White text for contrast */
+  width: 400px; /* Adjust the width as needed */
+  max-height: 600px; /* Optional: Limit max height */
+  transition: transform 0.3s ease; /* Hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly scale up the card when hovered */
+}
+
+.card-image {
+  width: 100%; /* Make image fill the width of the card */
+  height: 400px; /* Adjust the height to make images larger */
+  object-fit: cover; /* Ensure the image fills the space without distortion */
+  border-radius: 10px; /* Optional: rounded corners for the images */
+  margin-bottom: 15px; /* Space between image and text */
+}
+
+.card-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.card-github-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-github-link:hover {
+  background-color: #fff;
+  color: #800020; /* Burgundy text on hover */
+}
+
+.see-more-button {
+  background-color: #800020; /* Burgundy background color */
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Space between images and button */
+}
+
+.see-more-button:hover {
+  background-color: #5a001e; /* Darker burgundy on hover */
+}
+
+@media (max-width: 768px) {
+  .images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%; /* Allow cards to be more flexible on smaller screens */
+  }
+}
+/* Existing styling remains the same... */
+
+/* Styling for publications cards */
+.repo-cards-div-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.publication-card {
+  background-color: #eec0d6; /* Light rose background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Set a fixed width for publication cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Hover effect */
+}
+
+.publication-card:hover {
+  transform: scale(1.05); /* Slightly scale up the card when hovered */
+}
+
+.publication-card h2 {
+  font-size: 1.5rem;
+  color: #800020; /* Burgundy color for the title */
+  margin-bottom: 10px;
+}
+
+.publication-card p {
+  font-size: 1rem;
+  color: #333; /* Dark gray for the description */
+  margin-bottom: 15px;
+}
+
+.publication-card a {
+  font-size: 1rem;
+  color: #800020;
+  text-decoration: none;
+  border: 1px solid #800020; /* Burgundy border */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.publication-card a:hover {
+  background-color: #800020; /* Burgundy background on hover */
+  color: white; /* White text on hover */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .repo-cards-div-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .publication-card {
+    width: 90%; /* Allow publication cards to adjust on smaller screens */
+  }
+}
