@@ -51,6 +51,7 @@ export default function Opensource(props) {
           </div>
         ))}
         
+        {/* Déplacez le bouton ici, en dessous des cartes */}
         <div className="see-more-container">
           <a href="https://github.com/amirakhalfy" target="_blank" rel="noopener noreferrer">
             <button className="see-more-button">See More Projects</button>
@@ -59,6 +60,7 @@ export default function Opensource(props) {
       </>
     );
   }
+  
 
   function PublicationsComponent() {
     return (
