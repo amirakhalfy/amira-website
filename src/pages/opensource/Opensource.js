@@ -16,14 +16,7 @@ import statistic from '../../assets/images/statistic.png';
 
 export default function Opensource(props) {
 
-  useEffect(() => {
-    const myTimer = setInterval(() => {
-      console.log('Timer called');
-    }, 1000);
-
-    return () => clearInterval(myTimer);  
-  }, []);
-
+  
   const images = [
     { src: finetune, name: "- Sales Sentiment Analysis and questions answering system", description: "-Analyzed sentiments in Amazon sales and built a question-answering system using generative AI LLMs(LLaMA2, RoBERTa)then fine-tuned RoBERTa with PEFT, prompt engineering, RAG, LangChain." },
     { src: devops, name: "DevOps", description: "I’ve set up a CI/CD pipeline with Nexus, Docker Compose, SonarQube, Prometheus, and Grafana, automating code deployment and monitoring with email status notifications." },
@@ -34,6 +27,8 @@ export default function Opensource(props) {
     { src: computervision, name: "Object detection in remote sensing images project", description: "Object detection in remote sensing images using satellite imagery with deep learning and computer vision." },
     { src: montecarlo, name: "Monte carlo simulations", description: "I used Python to implement Monte Carlo simulations, which are essential in data science for predicting outcomes, understanding uncertainty, and assessing risk by running multiple random scenarios to estimate potential results." },
     { src: statistic, name: "Factors Affecting Grades ", description: "Univariate and bivariate analyses were conducted using Q-Q plots, pie charts, chi-square tests, Pearson and Spearman correlations,Kruskal-Wallis test. Key factors were identified using multiple linear regression and Random Forest." },
+
+
   ];
   
   const header = { title: "Projects", description: "Here are some of my projects." };
@@ -56,6 +51,7 @@ export default function Opensource(props) {
           </div>
         ))}
         
+        {/* Déplacez le bouton ici, en dessous des cartes */}
         <div className="see-more-container">
           <a href="https://github.com/amirakhalfy" target="_blank" rel="noopener noreferrer">
             <button className="see-more-button">See More Projects</button>
@@ -95,6 +91,14 @@ export default function Opensource(props) {
       </>
     );
   }
+
+  useEffect(() => {
+    const myTimer = setInterval(() => {
+      console.log('Timer called');
+    }, 1000);
+
+    return () => clearInterval(myTimer);
+  }, []);
 
   return (
     <div className="opensource-main">
