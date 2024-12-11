@@ -6,6 +6,7 @@ import { Fade } from "react-reveal";
 
 export default function Greeting(props) {
   const theme = props.theme;
+
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -27,19 +28,16 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia theme={theme} />
-             
-              
             </div>
           </div>
+
           <div className="greeting-image-div">
-         <img
-           alt="saad sitting on table"
-           src={require("../../assets/images/mira.png")}
-           className="image-with-fog"
-         ></img>
-         {/* <FeelingProud theme={theme} /> */}
-       </div>
-       
+            <img
+              alt="saad sitting on table"
+              src={require("../../assets/images/mira.png")}
+              className="image-with-fog"
+            />
+          </div>
         </div>
       </div>
     </Fade>

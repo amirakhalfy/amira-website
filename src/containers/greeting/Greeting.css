@@ -1,18 +1,5 @@
-.main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 4rem;
-}
-.greet-main {
-  width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
-  margin-top: 2rem;
-}
-
-
-.gretting-main {
+.greet-main,
+.greeting-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -20,85 +7,111 @@
 
 .greeting-main {
   display: flex;
+  flex-wrap: wrap; 
 }
 
 .greeting-main > * {
   flex: 1;
   margin-bottom: 30px;
-}
-.button-greeting-div {
-  display: flex;
-  margin-top: 20px;
+  box-sizing: border-box; 
 }
 
-.greeting-text {
-  margin-top: 80px;
-  font-size: 70px;
-  line-height: 1.1;
-  font-family: "Google Sans Bold";
-}
-
-.greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
-}
-
-.greeting-text-p {
-  font-size: 20px;
-  line-height: 40px;
-  margin-right: 40px;
-  font-family: "Google Sans Medium";
-}
 .greeting-image-div {
   display: flex;
-  justify-content: flex-end; /* Aligns the content to the right */
-  align-items: flex-start; /* Ensures items align to the top initially */
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .greeting-image-div > * {
-  max-width: 60%; /* Makes the image a little bigger, adjusting max-width */
-  height:auto;
-  margin-right: 10px; /* Adds space to the right */
-  margin-top: 10px; /* Moves the image down a little */
+  max-width: 60%;
+  height: auto;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
-
-/* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
   }
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 18px; 
   }
 }
-@media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+
+@media (max-width: 1024px) {
+  .greeting-text {
+    font-size: 40px; 
   }
+
+  .greeting-nickname {
+    font-size: 28px;
+  }
+
+  .greeting-text-p {
+    font-size: 18px;
+  }
+
+  .greeting-main {
+    flex-direction: column; 
+  }
+
+  .greeting-image-div {
+    width: 100%; 
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .greeting-image-div img {
+    max-width: 80%; 
+  }
+}
+
+@media (max-width: 768px) {
   .greeting-text {
     font-size: 30px;
-    margin-top: 0px;
-    text-align: center;
+    text-align: center; 
   }
+
   .greeting-nickname {
-    font-size: 25px;
-    text-align: center;
+    font-size: 22px;
+    text-align: center; 
   }
+
   .greeting-text-p {
     font-size: 16px;
+    text-align: center; 
     margin-right: 0px;
     line-height: normal;
-    text-align: center;
   }
+
   .greeting-main {
     display: block;
   }
 
-  .portfolio-repo-btn-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  .greeting-image-div img {
+    max-width: 90%; 
+  }
+
+  .button-greeting-div {
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting-text {
+    font-size: 24px; 
+  }
+
+  .greeting-nickname {
+    font-size: 20px;
+  }
+
+  .greeting-text-p {
+    font-size: 14px;
+  }
+
+  .greeting-image-div img {
+    max-width: 100%; 
   }
 }
