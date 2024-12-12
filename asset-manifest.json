@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/amira-website/static/css/main.a80c845d.chunk.css",
+    "main.css": "/amira-website/static/css/main.844f7329.chunk.css",
     "main.js": "/amira-website/static/js/main.fbd12743.chunk.js",
     "main.js.map": "/amira-website/static/js/main.fbd12743.chunk.js.map",
     "runtime-main.js": "/amira-website/static/js/runtime-main.e21416dc.js",
@@ -8,9 +8,9 @@
     "static/js/2.42898f04.chunk.js": "/amira-website/static/js/2.42898f04.chunk.js",
     "static/js/2.42898f04.chunk.js.map": "/amira-website/static/js/2.42898f04.chunk.js.map",
     "index.html": "/amira-website/index.html",
-    "precache-manifest.9b4b1b1797811adac938c77083a3e3ce.js": "/amira-website/precache-manifest.9b4b1b1797811adac938c77083a3e3ce.js",
+    "precache-manifest.9095c65254f895cb8fdfca38d770aef4.js": "/amira-website/precache-manifest.9095c65254f895cb8fdfca38d770aef4.js",
     "service-worker.js": "/amira-website/service-worker.js",
-    "static/css/main.a80c845d.chunk.css.map": "/amira-website/static/css/main.a80c845d.chunk.css.map",
+    "static/css/main.844f7329.chunk.css.map": "/amira-website/static/css/main.844f7329.chunk.css.map",
     "static/media/index.css": "/amira-website/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/Frauddetectionsystem.png": "/amira-website/static/media/Frauddetectionsystem.7680153d.png",
     "static/media/Jenkins.PNG": "/amira-website/static/media/Jenkins.fdb8cde6.PNG",
@@ -88,7 +88,7 @@
   "entrypoints": [
     "static/js/runtime-main.e21416dc.js",
     "static/js/2.42898f04.chunk.js",
-    "static/css/main.a80c845d.chunk.css",
+    "static/css/main.844f7329.chunk.css",
     "static/js/main.fbd12743.chunk.js"
   ]
 }
