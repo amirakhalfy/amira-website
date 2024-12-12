@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a165418d35d47ff1cad648945c6dc08d",
+    "revision": "ce6229bd11f9457be46a6d859e2bf1a5",
     "url": "/amira-website/index.html"
   },
   {
-    "revision": "9c393379b6825a5c8960",
-    "url": "/amira-website/static/css/main.3068eb6e.chunk.css"
+    "revision": "90c6a5f7f0adb53e3575",
+    "url": "/amira-website/static/css/main.49295e73.chunk.css"
   },
   {
     "revision": "dadb311149c78b4d5cd9",
     "url": "/amira-website/static/js/2.42898f04.chunk.js"
   },
   {
-    "revision": "9c393379b6825a5c8960",
+    "revision": "90c6a5f7f0adb53e3575",
     "url": "/amira-website/static/js/main.7a88cea7.chunk.js"
   },
   {
