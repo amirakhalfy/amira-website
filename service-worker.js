@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/amira-website/precache-manifest.a05319beb1468cf3d68d913fa0eacbf6.js"
+  "/amira-website/precache-manifest.3ced3b06d0e375a3cf28a2f47dc9b3d3.js"
 );
 
 self.addEventListener('message', (event) => {
